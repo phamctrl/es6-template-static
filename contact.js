@@ -4,7 +4,7 @@ module.exports = class extends Page {
     constructor(){
         // change localhost to heroku here
         // and the name to yours
-        super({title:"Contact", sName:"Richard Hildred", sAction:"https://dry-bayou-18746.herokuapp.com/send/"});
+        super({title:"Contact", sName:"Mimi Pham", sAction:"https://thank-you-app.herokuapp.com/send/"});
     }
     render(sPage) {
         return `
@@ -12,7 +12,6 @@ module.exports = class extends Page {
         <form action="${this.sAction}" method="POST">
             <!-- add a div.form-group rather than the <br />-->
             <div class="form-group">
-                <!-- give inputs the class form-control -->
                 <label>Name: <input name="name" placeholder="name" class="form-control" /></label>
             </div>
             <div class="form-group">
