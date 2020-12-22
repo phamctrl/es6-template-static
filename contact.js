@@ -10,22 +10,21 @@ module.exports = class extends Page {
         return `
         ${this.requireMarked('_pages/contact.md')}
         <form action="${this.sAction}" method="POST">
-            <!-- add a div.form-group rather than the <br />-->
             <div class="form-group">
-                <label>Name: <input name="name" placeholder="name" class="form-control" /></label>
+                <label>Name: <input name="Name" placeholder="Name" class="form-control" /></label>
             </div>
             <div class="form-group">
-                <label>Email:<input name="email" placeholder="email" type="email" class="form-control" /></label>
+                <label>Email:<input name="Email" placeholder="Email" type="Email" class="form-control" /></label>
             </div>
             <div class="form-group">
-                <label>Phone Number:<input name="phone" placeholder="telephone" type="tel"
+                <label>Phone Number:<input name="Phone" placeholder="Phone Number" type="tel"
                         class="form-control" /></label>
             </div>
             <div class="form-group">
-                <label>Message:<textarea name="message" placeholder="type your message here"
+                <label>Message:<textarea name="Message" placeholder="Type Your Message Here"
                         class="form-control"></textarea></label>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="Submit">Send Message</button>
 
         </form>
         `;
