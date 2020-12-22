@@ -1,8 +1,5 @@
-/* your css here */
-
-/* color scheme */
 :root {
-    --header-bg-color: #222;
+    --header-bg-color: 0000fe;
     --header-txt-color: #aaa;
     --header-highlight-color: white;
 }
