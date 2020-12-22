@@ -1,29 +1,94 @@
-:root {
-    --header-bg-color: 001FF0;
-    --header-txt-color: #aaa;
-    --header-highlight-color: white;
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+h1, h2, h3, h4, h5{
+    font-family: 'Bodoni 72', sans-serif;
 }
 
-.contact .navbar-inverse .navbar-nav > li > a[href="contact.html"], 
-.about .navbar-inverse .navbar-nav > li > a[href="about.html"],
-.index .navbar-inverse a.navbar-brand[href="."]
-{
-    color:var(--header-highlight-color);
-    background-color: inherit;
-}
-
-main {
-    min-height: calc(100vh - 2em);
-}
-footer {
-    height: 1em;
+body{
+    font-family: 'Chivo', sans-serif;
+    background-color: FFE6E6;
+    font-size: 20;
 }
 
 .navbar-inverse{
-    color:var(--header-txt-color);
-    background-color: var(--header-bg-color);
+    background-color: 0000fe;
+    color: white;
 }
 
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-brand {
     color: inherit;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+section#itemsInner{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+article#items{
+    position: relative;
+    margin-bottom: 450px;
+}
+
+div.moreleft, div.moreright {
+    position: absolute;
+    height: 100%;
+    width: 2em;
+    background: rgba(255, 255, 255, .5);
+    bottom: 0;
+}
+
+div.moreleft {
+    left: 0;
+}
+
+div.moreright {
+    left: 0;
+}
+
+.scrollleft, .scrollright {
+    position: absolute;
+    transform: scaleY(2);
+    bottom: 50%;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.scrollleft{
+    left: 5;
+}
+
+.scrollright{
+    right: 5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: 0000fe;
+    border-color: white;
+}
+
+img{
+    margin: 3px;
+}
+
+a.left-button, a.right-button {
+    text-decoration: none;
+    color:0000fe;
+}
+
+footer {
+    background-color: 0000fe;
+    color: white;
+    margin-top: 30px;
+    position:relative;
 }
